@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .line {
+            width: 0;
+            height: 3px;
+            background-color: darkcyan;
+            transition: 0.5s;
+        }
+
+        li:hover .line {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            Home
+            <div class="line"></div>
+        </li>
+
+        <li>
+            Home
+            <div class="line"></div>
+        </li>
+
+        <li>
+            Home
+            <div class="line"></div>
+        </li>
+
+        <li>
+            Home
+            <div class="line"></div>
+        </li>
+
+        <li>
+            Home
+            <div class="line"></div>
+        </li>
+    </ul>
+</body>
+</html>
