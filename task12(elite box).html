@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            background: url('https://aykhanhuseyn.github.io/eliteshoppy.github.io/img/bot_2.jpg');
+            height: 300px;
+            width: 600px;
+            background-size: 100% 100%;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .two, .three{
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            background-color:rgba(0, 0,0,0.20);
+            transition: 0.5s;
+        }
+
+        .two{
+            top: 100%;
+            left: -100%;
+        }
+
+        .three{
+            top: -100%;
+            right: -100%;
+        }
+
+        .one:hover .two,.one:hover .three{
+            left: 0;
+            top: 0;   
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>
