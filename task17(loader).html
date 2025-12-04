@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 140px;
+            width: 140px;
+            /* background-color: red; */
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 10px solid red;
+            /* animation: preload 1s 5 linear; */
+        }
+       
+        .box2{
+            height: 100px;
+            width: 100px;
+            /* background-color: darkcyan; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 10px solid darkcyan;
+            animation: preload1 5s 5 linear;
+        }
+        .box3{
+            height: 60px;
+            width: 60px;
+            /* background-color: black; */
+            border-top: solid 10px black;
+            /* animation: preload 1s infinite linear; */
+        }
+
+        div{
+            border-radius: 50%;
+        }
+
+        @keyframes preload{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes preload1{
+            to{
+                transform: rotate(-360deg);
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
