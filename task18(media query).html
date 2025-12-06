@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            font-size: 42px;
+            color: red;
+            text-align: center;
+            display: none;
+        }
+
+        @media(max-width:1600px){
+            .box1{
+                display: block;
+            }
+        }
+
+        @media(max-width:1200px){
+            .box2{
+                display: block;
+            }
+
+            .box1{
+                display: none;
+            }
+        }
+
+        @media(max-width:1000px){
+            .box3{
+                display: block;
+            }
+
+             .box1,.box2{
+                display: none;
+            }
+        }
+
+        @media(max-width:800px){
+            .box4{
+                display: block;
+            }
+
+             .box1,.box2,.box3{
+                display: none;
+            }
+        }
+
+        @media(max-width:600px){
+            .box5{
+                display: block;
+            }
+
+             .box1,.box2,.box3,.box4{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a laptop screen</div>
+    <div class="box box2">I am a Ipad screen</div>
+    <div class="box box3">I am a Fold screen</div>
+    <div class="box box4">I am a Mobile screen</div>
+    <div class="box box5">I am a Mini-phone screen</div>
+</body>
+</html>
